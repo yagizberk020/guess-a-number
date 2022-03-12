@@ -10,17 +10,17 @@ saytah = 0
 def is_input_valid(sayi, sayi_min, sayi_max):
 
     if not sayi.lstrip("-").isnumeric():
-        print('Lutfen gecerli bir sayi giriniz!')
+        print('Please enter a valid number!')
         return False
     elif not (min_sayi <= int(sayi) < sayi_max):
-        print(f'Lutfen {sayi_min} ile {sayi_max} arasinda bir sayi giriniz!')
+        print(f'Please enter a number between {sayi_min} and {sayi_max} !')
         return False
 
     return True
 
 while  saytah != say:
 
-    saytah = input(f"{min_sayi} ile {max_sayi} arasında bir sayı girin: ")
+    saytah = input(f"Please enter a number between {min_sayi} and {max_sayi} : ")
 
     if not is_input_valid(saytah, min_sayi, max_sayi):
         continue
@@ -30,9 +30,9 @@ while  saytah != say:
     saytahsay += 1
     
     if saytah < say:
-        print("daha büyük")
+        print("Larger")
         min_sayi = saytah
     elif saytah > say:
-        print("daha küçük")
+        print("Smaller")
         max_sayi = saytah
     
