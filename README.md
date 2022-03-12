@@ -1,2 +1,2 @@
 # guess-a-number
- computer randomly picks a number and u will guess it
+ computer randomly picks a number and you will guess it
